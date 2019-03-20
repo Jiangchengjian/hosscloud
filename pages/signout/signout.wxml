@@ -1,0 +1,29 @@
+
+<view class="containers">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <view class="usermotto">
+    <view class="cont clearfix ulev-3" bindtap='toquestion'>
+      <image class="ufl" src='../../images/icon_cjwt.png'></image>
+      <image class='ufr status_img_jiantou' src="https://res.fuyitianjian.net/images/wxml/icon_jiantou.png"/>
+      <span class="ufl">常见问题</span>
+    </view>
+
+    <view class="cont clearfix ulev-3" bindtap='toaboutus'>
+      <image class="ufl" src='../../images/icon_gywm.png'></image>
+      <image class='ufr status_img_jiantou' src="https://res.fuyitianjian.net/images/wxml/icon_jiantou.png"/>
+      <span class="ufl">关于我们</span>
+    </view>
+  </view>
+
+  <view class="usermotto">
+    <view class='signout' bindtap='signout'>退出登录</view>
+  </view> 
+
+</view>

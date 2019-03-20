@@ -1,0 +1,40 @@
+.containers{
+  width: 100vw;
+  /* height:calc(100vh - 103px); */
+  padding-top: 0rpx;
+  background-color:white;
+ 
+}
+
+.conts{
+  border-bottom: 1px solid #eee;
+  padding: 30rpx 40rpx;
+}
+.conts:last-child{
+  border: none;
+}
+.conts text{
+  font-size: 0.8rem;
+  color: #333;
+}
+.cont image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.cont span{
+  line-height: 40rpx;
+}
+
+.cont .status_img_jiantou{
+  display: block;
+  width: 40rpx;
+  height:40rpx;
+  margin-top: 4rpx;
+}
+.cont .ufl{
+  width: calc(100% - 50rpx);
+}
+
+.rotate{
+  transform: rotate(90deg);
+}

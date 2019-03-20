@@ -1,0 +1,21 @@
+<view class='containers'>
+
+    <view class='conts' wx:for="{{questions}}"  wx:for-item="item" wx:key="id">
+      <view class="cont clearfix ulev-3" data-index='{{index}}' bindtap='toanser'>
+        <image class='ufr status_img_jiantou {{(indexs == index && bol)?"rotate":""}}' src="https://res.fuyitianjian.net/images/wxml/icon_jiantou.png"/>
+        <span class="ufl">{{item.question}}</span>
+      </view>
+      <text wx:if="{{indexs == index && bol}}">{{item.answer}}</text>
+    </view> 
+    
+    <!-- <view class='conts'>
+      <view class="cont clearfix ulev-3" data-index='1' bindtap='toanser'>
+        <image class='ufr status_img_jiantou {{(index == 1 && bol)?"rotate":""}}' src="https://res.fuyitianjian.net/images/wxml/icon_jiantou.png"/>
+        <span class="ufl">2、如何视频报修呢？</span>
+      </view>
+      <text wx:if="{{index == 1 && bol}}">点击视频报修，对故障发生出进行拍摄视频，并口述该故障发生的位置（如XX楼XX房间）、故障现象，便于调度员处理报修信息</text>
+    </view>  -->
+
+    
+  
+</view>

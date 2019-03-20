@@ -1,0 +1,14 @@
+<view class="containers">
+    <image class='logo' src='https://res.fuyitianjian.net/images/wxml/img_logo.png'></image>
+
+     <view class="search-container search-containerT"> 
+       <image class='shouji' src='https://res.fuyitianjian.net/images/wxml/icon_shouji.png'></image><text decode='true' space='true'>&nbsp;</text><input type="number" placeholder="请输入手机号" placeholder-style="color:#76c5f0" bindinput="searchInputPhone"></input>
+    </view> 
+    <image class='xian' src='https://res.fuyitianjian.net/images/wxml/img_xian.png'></image>
+    <view class="search-container"> 
+       <image class='mima' src='https://res.fuyitianjian.net/images/wxml/icon_mima.png'></image><text decode='true' space='true'>&nbsp;</text><input type="password" placeholder="请输入密码" placeholder-style="color:#76c5f0" bindinput="searchInputPassword"></input>
+    </view>  
+   
+    <image class='xian' src='https://res.fuyitianjian.net/images/wxml/img_xian.png'></image>
+    <button class='btn' bindtap="searchClickLogin">登录</button>
+</view>

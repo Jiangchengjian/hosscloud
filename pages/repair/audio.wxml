@@ -1,0 +1,25 @@
+<view class='contains'>
+  <audio poster="{{poster}}" src="{{url}}" id="myAudio" controls loop></audio>
+
+
+  <image class='yuyin' src='https://res.fuyitianjian.net/images/wxml/IMG_boduan.png'></image>
+
+  <view class='time'>{{curTimeVal}}</view>
+
+  <image wx:if="{{!isPlay&&isUrl}}" bindtap='palyPause' class='play' src='https://res.fuyitianjian.net/images/wxml/yybx_play.png'></image>
+  <image wx:if="{{isPlay&&isUrl}}" bindtap='palyPause' class='zanting' src='https://res.fuyitianjian.net/images/wxml/yybx_zanting.png'></image>
+
+  <view class='luzhi'>
+       <image wx:if="{{!isSub}}" bindtouchstart='touchstart' bindtouchend='touchend' class='audio' src='https://res.fuyitianjian.net/images/wxml/yyxx_audio.png'></image> 
+      <view wx:if="{{isSub}}" bindtap='sub' class='sub'>发送</view>
+  </view>
+  <image wx:if="{{!isDelete&&isUrl}}" bindtap='delete' class='shanchu' src='https://res.fuyitianjian.net/images/wxml/icon_shanchu.png'></image>
+
+  <!-- <view class='ub'>
+    <view class='btn tx-c bg-6494f6' bindtap='agin'>{{choose?("停止"+curTimeVal):"录制"}}</view>
+    <view class='btn tx-c bg-6494f6' bindtap='sub'>确定</view>
+  </view> -->
+  
+</view>
+
+

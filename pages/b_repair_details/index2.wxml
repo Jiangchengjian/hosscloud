@@ -1,0 +1,21 @@
+ 
+ <view class="containers">
+  <video wx:if="{{type == 2}}" src="{{url}}" controls style='width:100vw;'></video>
+  <audio wx:if="{{type == 1}}" src="{{url}}" controls loop></audio>
+
+  <view class="content2">
+    <view class="cont3 clearfix ulev-3">
+      <span class="ufl">报修时间</span>
+      <span class="ufr color-aaa cutText-2">{{createDt}}</span>
+    </view>
+    <view class="cont3 clearfix ulev-3">
+      <span class="ufl">报修状态</span>
+      <span class="ufr color-aaa cutText-2">{{status==1?"已处理":(status==0?"待处理":"已忽略")}}</span>
+    </view>
+    <view class="cont3 clearfix ulev-3">
+      <span class="ufl">忽略原因</span>
+      <span class="ufr color-aaa cutText-2">{{reason}}</span>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,75 @@
+.contains{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: relative;
+}
+
+audio{
+  margin-top: 30vh;
+  margin-bottom: 5vh;
+  margin-left: calc(50vw - 300rpx);
+  display: none;
+}
+
+.yuyin{
+  width: 100vw;
+  height: 66.7vw;
+  margin-top:10vh;
+}
+
+.time{
+  width: 100vw;
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: calc(20vh + 200rpx);
+}
+
+.play,.zanting{
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  left: 10vw;
+  bottom: 20vh;
+}
+
+.luzhi{
+  width: 150rpx;
+  height: 150rpx;
+  color: white;
+  background: url(https://res.fuyitianjian.net/images/wxml/yybx_bg.png);
+  background-size: 100%;
+  position: absolute;
+  left: calc(50vw - 75rpx);
+  bottom: calc(20vh - 37.5rpx);
+  text-align: center;
+}
+.audio{
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 25rpx;
+}
+.sub{
+  width: 150rpx;
+  height: 150rpx;
+  line-height: 150rpx;
+}
+
+.shanchu{
+  width: 64rpx;
+  height: 64rpx;
+  position: absolute;
+  right: 10vw;
+  bottom: calc(20vh + 4rpx);
+}
+
+
+.btn{
+  width: 40%;
+  padding: 20rpx 0;
+  margin: 0 5%;
+  border-radius: 4px;
+  color: white;
+}

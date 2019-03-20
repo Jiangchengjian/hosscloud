@@ -1,0 +1,37 @@
+<!-- 扫房间，选设备 -->
+<view class="page">
+    <view class="page__bd page__bd_spacing">
+        <view class="kind-list">
+            <block wx:for="{{list}}" wx:key="id">
+                <view class="kind-list__item" bindtap='okRepair' data-project="【{{item.text}}】">
+                    <view id="{{item.id}}" class="weui-flex  kind-list__item-hd  {{item.id == id1 && bol1 ? 'kind-list__item-hd_show' : ''}}"  data-id='{{item.id}}' bindtap="kindToggle1" data-text="{{item.text}}">
+                        <view class="weui-flex__item">{{item.text}}</view>
+                        <view class="weui-cell__ft weui-cell__ft_in-access {{item.id == id1 && bol1 ? 'weui-cell__ft_in-access_show' : ''}}"></view>
+                    </view>
+                    <view class="kind-list__item-bd" wx:if="{{item.id == id1 && bol1}}">
+                        <view class="weui-cells weui-cells_show">
+                            <block wx:for="{{item.nodes}}" wx:for-item="page" wx:key="page.value">
+                                <view id="{{page.id}}"  class="weui-cell weui-cell_access {{page.id == id2 && bol2 ? 'kind-list__item-hd_show' : ''}}" bindtap='kindToggle2' data-id='{{page.id}}' data-text="{{page.text}}">
+                                    <view class="weui-cell__bd">{{page.text}}</view>
+                                    <view class="weui-cell__ft weui-cell__ft_in-access {{page.id == id2 && bol2 ? 'weui-cell__ft_in-access_show' : ''}}"></view>
+                                </view>
+
+                                <view class="kind-list__item-bd {{page.id == id2 && bol2 ? 'kind-list__item-bd_show' : ''}}">
+                                    <view class="weui-cells  weui-cells_show" wx:if="{{page.id == id2 && bol2}}">
+                                        <block wx:for="{{page.nodes}}" wx:for-item="page2" wx:key="page2.id">
+                                            <view id="{{page2.id}}"  class="weui-cell weui-cell_access" bindtap='selectCategory' data-id='{{page2.id}}' data-text="{{page2.text}}">
+                                                <view class="weui-cell__bd">{{page2.text}}</view>
+                                                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                                            </view>
+                                        </block>
+                                    </view>
+                                </view>
+
+                            </block>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>

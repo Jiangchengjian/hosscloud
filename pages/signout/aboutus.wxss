@@ -1,0 +1,21 @@
+
+.contains{
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: white;
+}
+image{
+  width: 100vw;
+  height: 31.2vw;
+}
+.text{
+  width: 100vw;
+  padding: 20rpx;
+  font-size: 1.05rem;
+  box-sizing: border-box;
+}
+.address{
+  width: 100vw;
+  text-align: center;
+}

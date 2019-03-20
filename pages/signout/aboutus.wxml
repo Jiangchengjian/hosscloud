@@ -1,0 +1,11 @@
+<view class='contains'>
+<image src='https://res.fuyitianjian.net/images/wxml/aboutus.png'></image>
+
+<view class='text'>
+<text decode='true' space='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们作为行业的先发者之一，自2003年成立以来一直致力于医院后勤服务的开发和提供。公司紧紧围绕着为客户提供“安全、优质、高效、低耗”的后勤服务整体解决方案这一使命，通过不断提升服务质量、不断开拓市场规模、不断优化服务内容等手段，满足医院的多元化需求
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;经过多年发展，公司医院后勤服务业务已经覆盖上海、江苏、浙江、重庆、福建等地区，服务40余家医院，其中大部分为三级甲等医院。随着我国医院后勤服务社会化改革的不断深入，凭借多年积累的专业优势，公司业务规模保持持续、快速增长。</text>
+</view>
+
+<view class='address'>官网  www.hosscloud.com</view>
+</view>
+
